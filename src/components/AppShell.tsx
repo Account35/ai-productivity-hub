@@ -136,4 +136,3 @@ export function AppShell({ children }: { children: ReactNode }) {
   );
 }
 
-export { X };
