@@ -1,134 +1,221 @@
-# AI Productivity Hub
+# AI Workplace Productivity Assistant
 
-Build a modern, responsive frontend-only web application called AI Workplace Productivity Assistant.
+An AI-powered workplace productivity tool designed to help professionals complete everyday tasks faster and more efficiently.
 
-The app should look and feel like a polished professional SaaS productivity platform. Keep the design clean, minimal, modern, and professional using a light grey and dark colour palette.
+The application provides a simple, modern SaaS-style interface for generating professional emails, researching and summarising information, and interacting with an AI workplace assistant.
 
-Main Dashboard
+> **Note:** This project is frontend-only and does not require user authentication, a backend, or a database.
 
-Create a dashboard with:
+---
 
-Left sidebar navigation
+## 🚀 Project Overview
 
-Dashboard/Home
+The **AI Workplace Productivity Assistant** brings common workplace productivity tasks into one application.
 
-Smart Email Generator
+Users can:
 
-AI Research Assistant
+* Generate professional workplace emails.
+* Choose different email tones.
+* Research and summarise topics or provided content.
+* Extract key insights and recommendations.
+* Interact with an AI workplace chatbot.
+* Edit and copy AI-generated responses.
 
-AI Workplace Chatbot
+The application focuses on providing a clean and intuitive user experience while keeping the technical architecture lightweight.
 
-Clean main content area
+---
 
-Responsive design for desktop, tablet, and mobile
+## ✨ Features Implemented
 
-Professional cards, buttons, inputs, and typography
+### 📧 Smart Email Generator
 
-Clear empty states and helpful UI messages
+* Generate professional workplace emails.
+* Supports three tones:
 
-1. Smart Email Generator
+  * Formal
+  * Friendly
+  * Persuasive
+* Editable AI-generated output.
+* Copy generated email content.
+* Regenerate responses.
+* Clear input and output.
 
-Create a tool where users can:
+### 🔎 AI Research Assistant
 
-Enter what they want the email to say
+* Enter a topic, question, or article content.
+* Generate summaries.
+* Extract key insights.
+* Generate recommendations.
+* Edit generated content.
+* Copy results.
+* Regenerate responses.
 
-Select a tone: Formal, Friendly, or Persuasive
+### 💬 AI Workplace Chatbot
 
-Generate a professional email
+* Interactive workplace AI assistant.
+* Chat-based user interface.
+* Responds to workplace productivity prompts.
+* Suggested prompts for common tasks.
+* Clear conversation functionality.
 
-Display the generated email in an editable text area
+### 🎨 User Interface
 
-Include actions such as Regenerate, Copy, and Clear
+* Modern SaaS-style dashboard.
+* Responsive design.
+* Sidebar navigation.
+* Light grey and dark colour palette.
+* Clean and professional interface.
+* Editable AI outputs.
+* Responsive layouts for different screen sizes.
+* Responsible AI disclaimer.
 
-2. AI Research Assistant
+---
 
-Create a research tool where users can:
+## 🛠️ Technologies and Tools Used
 
-Enter a topic, question, or article text
+| Technology / Tool              | Purpose                             |
+| ------------------------------ | ----------------------------------- |
+| **React**                      | Frontend application development    |
+| **JavaScript / TypeScript**    | Application logic                   |
+| **HTML5**                      | Application structure               |
+| **CSS**                        | Styling and responsive design       |
+| **Lovable**                    | AI-assisted application development |
+| **AI API / Mock AI Responses** | AI functionality                    |
+| **Git**                        | Version control                     |
+| **GitHub**                     | Source code hosting                 |
 
-Generate a concise summary
+---
 
-Display Key Insights
+## 📋 Requirements
 
-Display Recommendations
+Before running the project locally, make sure you have:
 
-Allow the generated content to be edited
+* [Node.js](https://nodejs.org/) installed.
+* npm installed.
+* Git installed.
 
-Include Regenerate, Copy, and Clear actions
+---
 
-3. AI Workplace Chatbot
+## ⚙️ Setup Instructions
 
-Create a modern chat interface where users can:
+### 1. Clone the Repository
 
-Enter workplace-related questions or prompts
+```bash
+git clone <repository-url>
+```
 
-Receive AI assistant responses
+### 2. Navigate to the Project
 
-View the conversation in a clean chat layout
+```bash
+cd ai-workplace-productivity-assistant
+```
 
-Clear the conversation
+### 3. Install Dependencies
 
-Use suggested prompts such as:
+```bash
+npm install
+```
 
-"Help me plan my workday"
+### 4. Start the Development Server
 
-"Summarise this information"
-
-"Help me write a professional response"
-
-"Give me ideas for improving productivity"
-
-AI Interaction
-
-Structure the prompts clearly so each tool produces useful workplace-focused responses.
-
-If no external AI API is connected, use realistic mock responses so the interface can still be demonstrated and tested.
-
-Important Constraints
-
-Frontend only
-
-No backend
-
-No database
-
-No authentication
-
-No login or registration
-
-Do not create user accounts
-
-Do not add unnecessary features that require a backend
-
-Keep the application lightweight and suitable for the free Lovable plan
-
-Do not add payment/subscription functionality
-
-Responsible AI
-
-Include a small, professional disclaimer explaining that AI-generated information should be reviewed by the user before being used for important workplace decisions or communications.
-
-Overall Goal
-
-Make the application feel like a real, polished workplace productivity SaaS product, while keeping the scope simple enough to build and demonstrate entirely on the frontend.
-
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/54e9b952-46dc-4891-b9ed-8d1bb14e3f5e).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+```bash
 npm run dev
 ```
+
+### 5. Open the Application
+
+After starting the development server, open the local URL displayed in your terminal.
+
+Typically:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## 🔐 Application Architecture
+
+This application is intentionally designed without:
+
+* ❌ Backend services
+* ❌ Database
+* ❌ User authentication
+* ❌ Login or registration
+* ❌ User accounts
+* ❌ Payment systems
+
+The application runs primarily on the frontend and is designed to remain lightweight and suitable for development using the free Lovable plan.
+
+---
+
+## 🤖 AI Functionality
+
+The application can use AI-generated responses for its productivity tools.
+
+Where an external AI API is not configured, **mock responses** can be used to demonstrate and test the application's functionality.
+
+If an AI API is connected, API credentials should be stored securely and should **never be committed directly to the GitHub repository**.
+
+---
+
+## 🧠 Responsible AI
+
+AI-generated content should always be reviewed by the user before being used for important workplace communications, research, or decisions.
+
+The AI Workplace Productivity Assistant is intended to support productivity and does not replace human judgement or professional expertise.
+
+---
+
+## 📱 Responsive Design
+
+The application is designed to work across:
+
+* 💻 Desktop
+* 📱 Mobile
+* 📟 Tablet
+
+The interface adapts to different screen sizes while maintaining usability and accessibility.
+
+---
+
+## 📂 Project Structure
+
+```text
+ai-workplace-productivity-assistant/
+│
+├── public/
+│
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   ├── assets/
+│   ├── App.*
+│   └── main.*
+│
+├── package.json
+├── README.md
+└── ...
+```
+
+> The exact project structure may vary depending on the Lovable-generated application.
+
+---
+
+## 🌐 Deployment
+
+The application can be deployed using frontend hosting platforms such as:
+
+* Lovable
+* Netlify
+* Vercel
+* GitHub Pages
+
+No dedicated backend server is required for the frontend-only version.
+
+---
+
+## 📄 License
+
+This project was created as a workplace productivity application and learning project.
