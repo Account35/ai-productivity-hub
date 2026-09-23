@@ -1,100 +1,175 @@
-# AI Productivity Hub
+# AI Workplace Productivity Assistant
 
-Build a modern, responsive SaaS web app called AI Workplace Productivity Assistant for professionals. The app must be frontend-only with no backend, database, authentication, login/register, or data storage.
+## Project Overview
 
-Design
+**AI Workplace Productivity Assistant** is a modern, responsive web application designed to help professionals complete common workplace tasks using artificial intelligence.
 
-Create a clean, professional dashboard using light grey, white, and dark charcoal. Avoid a generic blue/white AI design. Use a modern SaaS layout with a left sidebar, top navigation, cards, clean typography, subtle borders, and responsive mobile layouts.
+The application provides AI-powered tools for generating professional emails, researching and summarising information, and interacting with an AI workplace assistant. It is designed with a clean SaaS-style interface and focuses on making everyday workplace tasks faster and easier.
 
-Features
+The application is built as a **frontend-focused project** without a traditional backend or database.
 
-1. Smart Email Generator
+---
 
-User enters the purpose/details of an email.
+## Features Implemented
 
-Select tone: Formal, Friendly, or Persuasive.
+### Smart Email Generator
 
-Generate a complete AI-written email.
+* Generate professional workplace emails using AI.
+* Support multiple writing tones:
 
-Allow the generated email to be edited and copied.
+  * Formal
+  * Friendly
+  * Persuasive
+* Users can provide the purpose and details of the email.
+* Generated responses can be edited.
+* Copy generated emails to the clipboard.
 
-2. AI Research Assistant
+### AI Research Assistant
 
-User can enter a topic, paste article text, or provide a URL.
+* Enter a research topic or question.
+* Paste article or website content for analysis.
+* Summarise provided information using AI.
+* Generate key insights and important points.
+* Provide practical recommendations.
+* Edit and copy AI-generated research results.
 
-Generate an AI summary.
+### AI Workplace Chatbot
 
-Provide key insights, important points, and practical recommendations.
+* Interactive AI chat interface.
+* Users can enter workplace-related questions and prompts.
+* AI generates responses dynamically.
+* Conversation-style interface.
+* Responses can be copied and edited where applicable.
 
-Make outputs editable and copyable.
+### Dashboard
 
-3. AI Workplace Chatbot
+* Modern SaaS-style dashboard.
+* Sidebar navigation.
+* Quick access to AI productivity tools.
+* Responsive layout for desktop and mobile devices.
+* Clean light-grey, white, and dark visual design.
 
-Provide an interactive chat interface.
+### Responsible AI
 
-Users can ask workplace-related questions or enter custom prompts.
+* Includes a responsible AI disclaimer.
+* Reminds users to review AI-generated information before using it professionally.
+* Designed to support users rather than replace professional judgement.
 
-Responses must be generated dynamically by AI, not hardcoded or generic.
+---
 
-Include a clean conversation interface with editable/copyable responses.
+## Technologies and Tools Used
 
-AI
+* **React** – Frontend application framework
+* **TypeScript** – Type-safe application development
+* **Vite** – Development server and build tool
+* **Tailwind CSS** – Responsive styling and UI design
+* **AI API** – AI-generated workplace responses
+* **Lucide Icons** – Interface icons
+* **Git & GitHub** – Version control and project hosting
+* **Lovable** – Application development and prototyping
 
-Use AI-generated responses throughout the application. Do not use static placeholder responses as the final functionality. Structure prompts clearly for each feature so the AI produces useful, professional results.
+---
 
-Dashboard
+## Setup Instructions
 
-Include sidebar navigation for:
+### 1. Clone the Repository
 
-Dashboard
+```bash
+git clone https://github.com/your-username/ai-workplace-productivity-assistant.git
+```
 
-Email Generator
+### 2. Navigate to the Project
 
-Research Assistant
+```bash
+cd ai-workplace-productivity-assistant
+```
 
-AI Chat
+### 3. Install Dependencies
 
-Settings
+```bash
+npm install
+```
 
-The dashboard should provide quick access to the three main AI tools and a short overview of what the assistant can do.
+### 4. Configure Environment Variables
 
-Requirements
+If the application requires an AI API key, create a `.env` file in the project root:
 
-Frontend-only
+```env
+VITE_AI_API_KEY=your_api_key_here
+```
 
-No backend or database
+Do not commit API keys or other sensitive credentials to GitHub.
 
-Responsive design
+### 5. Start the Development Server
 
-Editable AI outputs
-
-Copy-to-clipboard functionality
-
-Loading states and error handling
-
-Responsible AI disclaimer explaining that AI outputs should be reviewed before professional use
-
-Keep the implementation simple and suitable for a Lovable free account with limited credits
-
-Do not over-engineer the application
-
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/db7bef30-947d-4a5f-a4e0-5c9f89beb783).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+```bash
 npm run dev
 ```
+
+The application will be available at the local development URL provided by Vite, usually:
+
+```text
+http://localhost:5173
+```
+
+### 6. Build for Production
+
+```bash
+npm run build
+```
+
+The production-ready files will be generated in the `dist` directory.
+
+---
+
+## Project Structure
+
+```text
+ai-workplace-productivity-assistant/
+│
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   ├── App.tsx
+│   └── main.tsx
+│
+├── public/
+├── .env
+├── package.json
+├── tailwind.config.js
+├── vite.config.ts
+└── README.md
+```
+
+---
+
+## Usage
+
+After starting the application, users can:
+
+1. Open the dashboard.
+2. Select **Email Generator** to create professional emails.
+3. Select **Research Assistant** to analyse topics or content.
+4. Select **AI Chat** to interact with the workplace assistant.
+5. Edit, copy, and review AI-generated outputs before using them.
+
+---
+
+## Responsible AI Notice
+
+AI-generated content may contain errors, incomplete information, or inappropriate recommendations. Users should review and verify AI-generated outputs before using them for important workplace, professional, legal, financial, or business decisions.
+
+---
+
+## Author
+
+**Lwando Ntlemeza**
+
+GitHub: `https://workmate-buddy-67.lovable.app/`
+
+---
+
+## License
+
+This project is intended for educational, demonstration, and portfolio purposes.
